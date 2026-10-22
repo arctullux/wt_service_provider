@@ -11,6 +11,8 @@
   --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
   --header-height: 70px;
   --transition-speed: 0.3s;
+  --home_bg_image: url("images/main_bg.jpeg");
+  --page_bg_image: url("images/page_bg.jpeg");
 }
 
 [data-theme="dark"] {
@@ -255,7 +257,6 @@ body {
 
 .content {
   margin-top: var(--header-height);
-  padding: 4rem 1.5rem;
   text-align: center;
 }
 
@@ -271,8 +272,17 @@ body {
 }
 
 #banner {
-  border: 5px solid red;
+  margin: 0;
+  height: 50vh;
+  background-image: var(--home_bg_image);
+  background-position: center;
+  background-size: cover;
 }
+
+#hr1 {
+  margin-top: 2em;
+}
+
 
 
 @media (min-width: 769px) {
@@ -305,5 +315,9 @@ body {
 
   .nav-actions .btn-primary {
     display: inline-block;
+  }
+
+  #banner {
+    height: 30vh;
   }
 }
