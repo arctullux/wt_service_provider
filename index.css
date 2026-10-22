@@ -271,16 +271,48 @@ body {
   margin: 0 auto;
 }
 
+#home {
+
+}
+
 #banner {
   margin: 0;
   height: 50vh;
   background-image: var(--home_bg_image);
   background-position: center;
   background-size: cover;
+  margin-bottom: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 #hr1 {
-  margin-top: 2em;
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+}
+
+#small_intro {
+  margin-top: 2%;
+}
+#small_intro p {
+  margin: 2%;
+}
+
+#service_map {
+  margin: 2%;
+}
+
+#service_map_embed {
+  margin-top: 2%;
+  height: 50vw;
+  width: 100%;
+}
+
+#service_map_embed iframe {
+  width: 100%;
 }
 
 
@@ -319,5 +351,9 @@ body {
 
   #banner {
     height: 30vh;
+  }
+
+  #small_intro p {
+    margin: 1%;
   }
 }
