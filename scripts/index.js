@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (savedTheme) {
     document.documentElement.setAttribute("data-theme", savedTheme);
   } else if (systemPrefersDark) {
-    document.documentElement.setAttribute("data-theme", dark);
+    // document.documentElement.setAttribute("data-theme", dark);
   }
 
   themeToggleBtn.addEventListener("click", () => {

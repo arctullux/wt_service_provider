@@ -5,6 +5,7 @@
     <title>Service Provider Template</title>
     <link rel="stylesheet" href="index.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
   </head>
   <body>
   <!-- Navigation Header -->
@@ -104,13 +105,46 @@
     <section id="service_map">
       <h1>Areas We Serve</h1>
       <p>Denton</p>
+      <!-- TODO: Embed a map using leaflet.js, and create a separate script to block out the Denton area. -->
       <div id="service_map_embed">
-        <iframe src="https://www.google.com/maps/d/embed?mid=1TwnXWgoXw84EOxRVLT6SVmjH_ETkhSY&ehbc=2E312F&noprof=1" width="340" height="480"></iframe>
+
       </div>
 
     </section>
   </main>
-
+  <!-- Scripts -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+          integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+          crossorigin=""></script>
   <script src="scripts/index.js"></script>
+  <script src="scripts/map.js"></script>
+
   </body>
 </html>
+
+
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--<head>-->
+<!--  <title>Leaflet Test</title>-->
+<!--  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />-->
+<!--  <style>-->
+<!--    #service_map_embed {-->
+<!--      width: 100%;-->
+<!--      height: 500px;-->
+<!--    }-->
+<!--  </style>-->
+<!--</head>-->
+<!--<body>-->
+<!--<div id="service_map_embed"></div>-->
+
+<!--<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>-->
+<!--<script>-->
+<!--  var map = L.map('service_map_embed').setView([33.2293, -97.1334], 10);-->
+<!--  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {-->
+<!--    maxZoom: 19,-->
+<!--    attribution: '&copy; OpenStreetMap contributors'-->
+<!--  }).addTo(map);-->
+<!--</script>-->
+<!--</body>-->
+<!--</html>-->
