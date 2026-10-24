@@ -1,13 +1,13 @@
 
 
-var map = L.map('service_map_embed').setView([33.22931341724211, -97.13338591576182], 11.5);
-var popup = L.popup();
+let map = L.map('service_map_embed').setView([33.22931341724211, -97.13338591576182], 11.5);
+let popup = L.popup();
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
   maxZoom: 19,
   attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 
-var service_area = L.polygon([
+let service_area = L.polygon([
   [33.25907207872833, -97.17599208789082],
   [33.26234880003977, -97.14490403342941],
   [33.26431477382819, -97.13419302306876],
@@ -21,13 +21,13 @@ var service_area = L.polygon([
 
 
 function onMapClick(e) {
-  var lat = e.latlng.lat.toString();
-  var lng = e.latlng.lng.toString();
+  let lat = e.latlng.lat.toString();
+  let lng = e.latlng.lng.toString();
   fetch(`https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lng}`)
     .then(response => response.json())
     .then(data => {
       if (data && data.display_name) {
-        var address = data.display_name;
+        let address = data.display_name;
         console.log("Found address: ", address);
 
         popup.setLatLng([lat, lng]).setContent("<b>Selected Location:</b><br>" + address).openOn(map);
