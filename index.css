@@ -99,4 +99,8 @@
   #small_intro p {
     margin: 1%;
   }
+
+  #service_map_embed {
+    height: 500px;
+  }
 }

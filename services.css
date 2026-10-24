@@ -1,7 +1,4 @@
-/*
-  "Where is the navbar styling?"
-  Look in sitewide.css, ya doofus.
- */
+
 
 :root {
   --bg-color: #ffffff;
@@ -12,11 +9,11 @@
   --primary-color: #3b82f6;
   --primary-hover: #2563eb;
   --primary-text: #ffffff;
+  --widget-bg-color: #EAFCFFFF;
   --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
   --header-height: 70px;
   --transition-speed: 0.3s;
-  --home_bg_image: url("images/main_bg.jpeg");
-  --page_bg_image: url("images/page_bg.jpeg");
+  --home_bg_image: url("images/sample_banner.png");
 }
 
 
@@ -29,7 +26,7 @@
 
 .hero h1 {
   font-size: 2.25rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .hero p {
@@ -38,57 +35,34 @@
   margin: 0 auto;
 }
 
-#home {
-
-}
-
 #banner {
-  height: 50vh;
+  height: 20vh;
   background-image: var(--home_bg_image);
   background-position: center;
   background-size: cover;
-  margin-bottom: 2%;
+}
+
+#services {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-#hr1 {
-  display: block;
-  margin: 0 auto;
-  width: 90%;
+.widget {
+  background-color: var(--widget-bg-color);
+  width: 80%;
+  border-radius: 20px;
+  margin-top: 5%;
+  padding: 2%;
 }
 
-#small_intro {
-  margin-top: 2%;
+.widget h1 {
+  margin: 5%;
 }
-#small_intro p {
-  margin: 2%;
-}
-
-#service_map {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 2%;
-}
-
-#service_map_embed {
-  margin-top: 2%;
-  height: 50vw;
-  width: 100%;
-}
-
-#service_map_embed iframe {
-  width: 100%;
-}
-
-#service_map_embed {
-  width: 100%;
-  max-width: 1000px;
+.widget_image {
   height: 300px;
+  width: 250px;
 }
 
 
@@ -101,5 +75,19 @@
 
   #small_intro p {
     margin: 1%;
+  }
+  #services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: auto;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .widget {
+    width: 100%;
+    margin-top: 0;
   }
 }
