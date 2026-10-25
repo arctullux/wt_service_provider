@@ -1,0 +1,134 @@
+
+
+:root {
+  --bg-color: #ffffff;
+  --bg-secondary: #f8fafc;
+  --text-color: #0f172a;
+  --text-muted: #64748b;
+  --border-color: #e2e8f0;
+  --primary-color: #3b82f6;
+  --primary-hover: #2563eb;
+  --primary-text: #ffffff;
+  --widget-bg-color: #EAFCFFFF;
+  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  --header-height: 70px;
+  --transition-speed: 0.3s;
+  --home_bg_image: url("images/sample_banner.png");
+}
+
+
+
+
+.content {
+  margin-top: var(--header-height);
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  color: var(--text-muted);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#banner {
+  height: 20vh;
+  background-image: var(--home_bg_image);
+  background-position: center;
+  background-size: cover;
+}
+
+#services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.widget {
+  background-color: var(--widget-bg-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  border-radius: 20px;
+  margin-top: 5%;
+  padding: 5%;
+}
+
+.widget h1 {
+  margin: 5%;
+}
+.widget_image {
+  height: 300px;
+  width: 250px;
+}
+
+
+@media (orientation: landscape) {
+  #banner {
+    height: min-content;
+  }
+
+  #services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: auto;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .widget {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .widget_image {
+    height: 90%;
+    width: 80%;
+  }
+
+}
+@media (min-width: 769px) {
+
+  #banner {
+    height: 15vh;
+  }
+
+  #small_intro p {
+    margin: 1%;
+  }
+  #services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: auto;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .widget {
+    width: 100%;
+    margin-top: 0;
+    padding: 2%;
+  }
+
+  .widget p {
+    padding: 4%;
+  }
+
+  .widget_image {
+    margin-bottom: 4%;
+  }
+
+
+}

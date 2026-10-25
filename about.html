@@ -1,10 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Title</title>
-</head>
-<body>
+  <head>
+    <title>Service Provider Template</title>
+    <!-- SEO meta tags -->
 
-</body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Invokes leaflet.js library -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+    <!-- Main stylesheet for this page -->
+    <link rel="stylesheet" href="about.css"/>
+    <!-- The sitewide stylesheet controls styling across all pages. -->
+    <link rel="stylesheet" href="sitewide.css"/>
+  </head>
+
+  <body>
+  <header class="navbar">
+    <div class="nav-container">
+
+      <!-- Logo -->
+      <a href="#" class="logo">
+        <svg class="logo-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+          <polyline points="2 17 12 22 22 17"></polyline>
+          <polyline points="2 12 12 17 22 12"></polyline>
+        </svg>
+        <span>BrandName</span>
+      </a>
+
+      <!-- Desktop Links -->
+      <nav class="desktop-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="about.html" class="nav-link active">About Us</a>
+        <a href="work_gallery.html" class="nav-link">Our Work</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+
+      <div class="nav-actions">
+
+        <a href="#get-started" class="btn-primary">Get Started</a>
+
+        <button id="hamburgerBtn" class="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+    <div id="mobileDrawer" class="mobile-drawer" aria-hidden="true">
+      <nav class="mobile-menu">
+        <a href="index.html" class="mobile-nav-link">Home</a>
+        <a href="services.html" class="mobile-nav-link">Services</a>
+        <a href="about.html" class="mobile-nav-link active">About Us</a>
+        <a href="work_gallery.html" class="mobile-nav-link">Our Work</a>
+        <a href="contact.html" class="mobile-nav-link">Contact</a>
+        <div class="mobile-actions">
+          <a href="#get-started" class="btn-primary full-width">Get Started</a>
+        </div>
+      </nav>
+    </div>
+
+  <div id="navOverlay" class="nav-overlay"></div>
+
+  <!-- Site Begin -->
+
+    <main class="content">
+      <section id="home" class="hero">
+        <div id="banner">
+          <div id="banner_text">
+            <h1>Who Are We?</h1>
+            <p>We are a service provider company. Its pretty obvious.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <section id="about" class="panel">
+      <h1>About Us</h1>
+      <p>We are your local service provider company with 5 star reviews. Lorem ipsum dolor sit amet type shit.</p>
+    </section>
+    <hr>
+    <section id="history" class="panel">
+      <h1>Our Story</h1>
+      <p>This company was made out of a garage. In 1980, it was started by one random dude. And then eventually, it became this company. Idk, make something up here.</p>
+    </section>
+  <!-- Scripts -->
+    <script src="scripts/sitewide.js"></script>
+  </body>
+
 </html>

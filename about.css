@@ -1,0 +1,74 @@
+
+
+:root {
+  --bg-color: #ffffff;
+  --bg-secondary: #f8fafc;
+  --text-color: #0f172a;
+  --text-muted: #64748b;
+  --border-color: #e2e8f0;
+  --primary-color: #3b82f6;
+  --primary-hover: #2563eb;
+  --primary-text: #ffffff;
+  --widget-bg-color: #EAFCFFFF;
+  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  --header-height: 70px;
+  --transition-speed: 0.3s;
+  --home_bg_image: url("images/sample_banner.png");
+}
+
+
+
+
+.content {
+  margin-top: var(--header-height);
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  color: var(--text-muted);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#banner {
+  height: 20vh;
+  background-image: var(--home_bg_image);
+  background-position: center;
+  background-size: cover;
+}
+hr {
+  width: 80vw;
+  margin: 0 auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.panel {
+  margin: 5%;
+}
+
+@media (orientation: landscape) {
+  #banner {
+    height: min-content;
+  }
+
+}
+@media (min-width: 769px) {
+
+  hr {
+    width: 90vw;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  #banner {
+    height: 15vh;
+  }
+
+  .panel {
+    margin: 2%;
+  }
+}
