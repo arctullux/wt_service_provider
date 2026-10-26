@@ -70,6 +70,7 @@ body {
   font-size: 15px;
 }
 
+
 @media (orientation: landscape) {
   #banner {
     height: min-content;
@@ -89,5 +90,11 @@ body {
 
   .panel {
     margin: 2%;
+  }
+
+  #form_label {
+    font-size: 18px;
+    font-weight: 600;
+    color: red;
   }
 }
