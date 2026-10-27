@@ -54,12 +54,16 @@ body {
   width: 300px;
   height: 45px;
   font-size: 18px;
+  border: 1px solid black;
+  border-radius: 10px;
 }
 
 #inquiry {
   height: 250px;
   width: 300px;
   font-size: 18px;
+  border: 1px solid black;
+  border-radius: 10px;
 }
 
 #submit_btn {
@@ -67,7 +71,23 @@ body {
   height: 45px;
   margin: 0 auto;
   margin-top: 5%;
-  font-size: 15px;
+  background-color: #7ec6e5;
+  border: none;
+  border-radius: 10px;
+  transform: scale(1.2);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.2s ease-in;
+}
+
+#submit_btn:hover {
+  background-color: #629aaf;
+
+}
+
+#submit_btn:active {
+  transform: scale(1);
 }
 
 
